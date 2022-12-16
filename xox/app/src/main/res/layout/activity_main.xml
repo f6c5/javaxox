@@ -13,24 +13,30 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
-
-        <Button
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:layout_weight="0"
-            android:text="s"/>
         <TextView
-            android:layout_width="match_parent"
+            android:id="@+id/stat_x"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
+            android:layout_weight="0.4"
             android:text="durum"
             android:textAlignment="center"
             android:textSize="10pt"/>
         <Button
-            android:layout_width="60dp"
-            android:layout_height="60dp"
+            android:id="@+id/btn_pause"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:theme="@style/Theme.Material3.DayNight"
+            android:drawableLeft="@drawable/menu"
             android:layout_weight="0"
-            android:text="d"/>
+            android:text="."/>
+        <TextView
+            android:id="@+id/stat_o"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4"
+            android:text="durum"
+            android:textAlignment="center"
+            android:textSize="10pt"/>
     </LinearLayout>
     <LinearLayout
         android:id="@+id/ln"
@@ -50,61 +56,72 @@
             android:layout_gravity="center">
             <TableRow>
                 <Button
+                    android:id="@+id/btn_1"
                     android:layout_height="100dp"
                     android:layout_margin="10dp"
                     android:textSize="15pt"
-                    android:text="x"/>
+                    android:text="1"/>
 
                 <Button
+                    android:id="@+id/btn_2"
                     android:layout_height="100dp"
                     android:layout_margin="10dp"
                     android:textSize="15pt"
-                    android:text="o"/>
+                    android:text="2"/>
 
                 <Button
+                    android:id="@+id/btn_3"
                     android:layout_height="100dp"
                     android:layout_margin="10dp"
                     android:textSize="15pt"
-                    android:text=""/>
+                    android:text="3"/>
             </TableRow>
             <TableRow>
                 <Button
+                    android:id="@+id/btn_4"
                     android:layout_height="100dp"
                     android:layout_margin="10dp"
                     android:textSize="15pt"
-                    android:text=""/>
+                    android:text="4"/>
 
                 <Button
+                    android:id="@+id/btn_5"
                     android:layout_height="100dp"
                     android:layout_margin="10dp"
                     android:textSize="15pt"
-                    android:text="o"/>
+                    android:text="5"/>
 
                 <Button
+                    android:id="@+id/btn_6"
                     android:layout_height="100dp"
                     android:layout_margin="10dp"
                     android:textSize="15pt"
-                    android:text="x"/>
+                    android:text="6"/>
+
             </TableRow>
             <TableRow>
                 <Button
+                    android:id="@+id/btn_7"
                     android:layout_height="100dp"
                     android:layout_margin="10dp"
                     android:textSize="15pt"
-                    android:text="o"/>
+                    android:text="7"/>
 
                 <Button
+                    android:id="@+id/btn_8"
                     android:layout_height="100dp"
                     android:layout_margin="10dp"
                     android:textSize="15pt"
-                    android:text=""/>
+                    android:text="8"/>
 
                 <Button
+                    android:id="@+id/btn_9"
                     android:layout_height="100dp"
                     android:layout_margin="10dp"
                     android:textSize="15pt"
-                    android:text="x"/>
+                    android:text="9"/>
             </TableRow>
         </TableLayout>
+
     </LinearLayout>
 </LinearLayout>
