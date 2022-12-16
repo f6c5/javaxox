@@ -22,7 +22,7 @@
             android:textAlignment="center"
             android:textSize="10pt"/>
         <Button
-            android:id="@+id/btn_pause"
+            android:id="@+id/btn_menu"
             android:layout_width="70dp"
             android:layout_height="70dp"
             android:theme="@style/Theme.Material3.DayNight"
@@ -45,6 +45,24 @@
         android:orientation="horizontal"
         android:padding="2dp"
         android:background="@color/black"/>
+    <LinearLayout
+        android:id="@+id/pnlMenu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:text="yeniden başla"
+            android:textSize="12pt"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:text="ana menü"
+            android:textSize="12pt"/>
+
+    </LinearLayout>
     <LinearLayout
         android:id="@+id/board"
         android:layout_width="match_parent"

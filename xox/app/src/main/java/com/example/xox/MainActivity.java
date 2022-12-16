@@ -7,6 +7,7 @@ import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Button;
+import android.widget.LinearLayout;
 import android.widget.EditText;
 import android.widget.Toast;
 import android.widget.Button;
@@ -24,6 +25,8 @@ public class MainActivity extends AppCompatActivity {
     private Button b8;
     private Button b9;
 
+    private LinearLayout pnlMenu;
+    private Button btnMenu;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,9 +47,16 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Toast.makeText(MainActivity.this, "mesaj", Toast.LENGTH_LONG).show();
             } } );
+
+
+        pnlMenu = (LinearLayout) findViewById(R.id.pnlMenu);
+        btnMenu = (Button)findViewById(R.id.btn_menu);
+
+        btnMenu.setOnClickListener (new View.OnClickListener() {
+            public void onClick(View view) {
+                pnlMenu.setVisibility(View.VISIBLE);
+            } } );
     }
-
-
 
 
 
