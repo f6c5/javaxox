@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btn_settig"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:drawableLeft="@drawable/setting"
+            android:theme="@style/Theme.Material3.DayNight"
+            android:layout_weight="0"
+            android:text="."/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="XOX"
+            android:textSize="15pt"
+            android:textAlignment="center"/>
+        <Button
+            android:id="@+id/btn_history"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:drawableLeft="@drawable/scroll"
+            android:theme="@style/Theme.Material3.DayNight"
+            android:layout_weight="0"
+            android:text="." />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="2dp"
+        android:background="@color/black"/> <!--ln-->
+
+
+    <LinearLayout
+        android:id="@+id/pnl_setting"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:text="X Ad:"
+                android:padding="10dp"
+                android:textSize="15pt"/>
+            <EditText
+                android:id="@+id/et_x_nick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.9"
+                android:textSize="15pt"
+                android:text="oyuncu 1"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:text="O Ad:"
+                android:padding="10dp"
+                android:textSize="15pt"/>
+            <EditText
+                android:id="@+id/et_o_nick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.9"
+                android:textSize="15pt"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.1"
+                    android:text="Mod"
+                    android:padding="10dp"
+                    android:textSize="15pt"/>
+                <RadioGroup
+                    android:id="@+id/grp_mod"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="0.9">
+                    <RadioButton
+                        android:id="@+id/rd_pc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="bilgisayar"
+                        android:textSize="12pt"
+                        android:layout_margin="10dp"/>
+
+                    <RadioButton
+                        android:id="@+id/rd_human"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="insan"
+                        android:textSize="12pt"
+                        android:layout_margin="10dp"/>
+                </RadioGroup>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/pnl_mod"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.1"
+                    android:text="zorluk"
+                    android:padding="10dp"
+                    android:textSize="15pt"/>
+                <RadioGroup
+                    android:id="@+id/grp_pc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="0.9">
+                    <RadioButton
+                        android:id="@+id/rd_easy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="kolay"
+                        android:textSize="12pt"
+                        android:layout_margin="10dp"/>
+
+                    <RadioButton
+                        android:id="@+id/rd_hard"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="zor"
+                        android:textSize="12pt"
+                        android:layout_margin="10dp"/>
+                </RadioGroup>
+            </LinearLayout>
+
+        </LinearLayout>
+        <Button
+            android:id="@+id/btn_save"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:theme="@style/Theme.Material3.DayNight"
+            android:text="kaydet"
+            android:textSize="12pt"/>
+
+    </LinearLayout><!--pnl_setting-->
+
+    <LinearLayout
+        android:id="@+id/pnl_history"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.8">
+
+            <ListView
+                android:id="@+id/lv_history"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/btn_clear_hist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="geçmişi sil"
+                android:textSize="10pt"
+                android:padding="25dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout><!--pnl_history-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="90dp"
+        android:paddingVertical="60dp">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:src="@drawable/xox"
+            android:contentDescription="resim"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btn_start"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15pt"
+            android:theme="@style/Theme.Material3.DayNight"
+            android:text="başla"/>
+
+    </LinearLayout>
+</LinearLayout>
