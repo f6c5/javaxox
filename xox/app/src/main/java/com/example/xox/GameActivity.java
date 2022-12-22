@@ -63,10 +63,6 @@ public class GameActivity extends AppCompatActivity {
 
     private final char[] board = new char[9];
 
-
-
-
-
     private DatabaseHelper db_help;
 
     @Override

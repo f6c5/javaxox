@@ -85,6 +85,7 @@ public class MainActivity extends AppCompatActivity {
         rd_easy.setOnClickListener(view -> checkedEasy());
         rd_hard.setOnClickListener(view -> checkedHard());
 
+        game_mode = "insana_karsi";
 
         registerForContextMenu(btn_start);
     }

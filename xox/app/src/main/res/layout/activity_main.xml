@@ -68,7 +68,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="0.9"
                 android:textSize="15pt"
-                android:text="oyuncu 1"/>
+                android:text="oyuncu1"/>
         </LinearLayout>
 
         <LinearLayout
@@ -87,7 +87,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="0.9"
-                android:textSize="15pt"/>
+                android:textSize="15pt"
+                android:text="oyuncu1"/>
         </LinearLayout>
 
         <LinearLayout
